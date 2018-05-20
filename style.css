@@ -11,7 +11,7 @@ section {
 button {
     border: 2px solid;
     padding: 1% 0.5%;
-    min-width: 120px;
+    min-width: 190px;
     font-size: 20px;
     line-height: 20px;
     border-radius: 5px;
@@ -19,11 +19,12 @@ button {
     cursor: pointer;
     min-height: 30px;
     margin-right: 1%;
-    background-position: 100% 0;
-    background-size: 300%;
+    background: #ffffff 100% 0;
+    /*background-position: 100% 0;*/
+    background-size: 400%;
 }
 
-::first-letter {
+button::first-letter {
     font-size: 22px;
     font-weight: 700;
 }
@@ -31,18 +32,42 @@ button {
 .purple {
     color: #8e44ad;
     border-color: #8e44ad;
-    background-image: linear-gradient(90deg, #8e44ad 50%, transparent 50%);
-    transition: 0.4s;
+    background-image: linear-gradient(to right, #8e44ad 50%, transparent 50%);
+    transition: 0.5s;
 }
-
-/*.purple:hover {*/
-    /*background-image:linear-gradient(45deg, #ff1aff, #800080);*/
-    /*color: #fff;*/
-    /*border: none;*/
-
-/*}*/
 
 .purple:hover {
     background-position: 0 100%;
     color: #ffffff;
+}
+
+.yellow {
+    color: #ffff00;
+    border-color: #ffff00;
+    background-image: linear-gradient(45deg, #ffff00 50%, transparent 50%);
+    transition: 0.5s;
+}
+
+.yellow:hover {
+    background-position: 0 100%;
+    color: #ffffff;
+}
+
+.blue {
+    color: #7070db;
+    border-color: #7070db;
+    background-image: linear-gradient(135deg, #7070db 50%, transparent 50%);
+    transition: 0.5s;
+}
+
+.blue:hover {
+    background-position: 0 50%;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+        min-width: 30%;
+        font-size: 12px;
+    }
 }
