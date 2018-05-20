@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 50%;
+    margin: 50vh auto;
+    display: flex;
+    }
+button {
+    border: 2px solid;
+    padding: 1% 0.5%;
+    min-width: 120px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    min-height: 30px;
+    margin-right: 1%;
+    background-position: 100% 0;
+    background-size: 300%;
+}
+
+::first-letter {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.purple {
+    color: #8e44ad;
+    border-color: #8e44ad;
+    background-image: linear-gradient(90deg, #8e44ad 50%, transparent 50%);
+    transition: 0.4s;
+}
+
+/*.purple:hover {*/
+    /*background-image:linear-gradient(45deg, #ff1aff, #800080);*/
+    /*color: #fff;*/
+    /*border: none;*/
+
+/*}*/
+
+.purple:hover {
+    background-position: 0 100%;
+    color: #ffffff;
+}
